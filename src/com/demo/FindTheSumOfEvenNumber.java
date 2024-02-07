@@ -11,7 +11,7 @@ public class FindTheSumOfEvenNumber {
 		
 		int sum=Arrays.stream(numbers).filter(n->n%2==0).sum();
 		
-		System.out.println("The sumof the even number is:"+sum);
+		System.out.println("The sum of the even number is:"+sum);
 	}
 
 }
