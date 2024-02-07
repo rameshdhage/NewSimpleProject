@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class Demo {
+public class IterrateHashMap {
 	
 	public static void main(String[] args) {
 		
