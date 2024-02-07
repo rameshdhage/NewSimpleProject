@@ -17,6 +17,8 @@ public class EvenNumberStream {
 		l.add(15);
 		l.add(25);
 		
+		System.out.println("normal printe of the array list");
+		
 		System.out.println(l);
 		
 		//without using stream concept
@@ -30,12 +32,18 @@ public class EvenNumberStream {
 		
 		//with using atream concept
 		
+		System.out.println("This is a even number");
 		List<Integer> ar=l.stream().filter(i->i%2==0).collect(Collectors.toList());
 		
 		System.out.println(ar);
 		
-		}
+		
+	System.out.println("This is a odd number");
+	List<Integer> ar1=l.stream().filter(i->i%2==1).collect(Collectors.toList());
+	
+	System.out.println(ar1);
 	
 	
 
+}
 }
