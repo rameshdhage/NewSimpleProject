@@ -2,6 +2,7 @@ package com.demo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -28,6 +29,12 @@ List<String>reString=list.stream().map(e->e+"").filter(e->e.startsWith("1")).col
 	Map<String,Long>collect=emp.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.counting()));
 	
 	System.out.println(collect);
+	
+	List<Employee> resList=emp.stream().sorted(Comparator.comparing(Employee::getAge)).collect(Collectors.toList());
+	
+	   System.out.println(resList);
+	  resList.forEach(ele->System.out.println("Age="+ele.getAge()+"Name="+ele.getName()));
+	   
 	}
 
 }
